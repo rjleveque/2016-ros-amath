@@ -5,7 +5,7 @@ class: center, middle
 
 # Reproducibility and Open Science
 
-<small>Follow along at: <a href="XXX">XXX</small>
+<small>Follow along at: <a href="https://github.com/rjleveque/2016-ros-amath">https://github.com/rjleveque/2016-ros-amath</small>
 
 ---
 
@@ -30,7 +30,7 @@ Additional funding from
 layout: true
 
 <div style="position: absolute; left: 650px; top: 370px;">
-<image src="images/escience-network.png" width=500px style="opacity:0.4;filter:alpha(opacity=40);"> </div>
+<image src="images/escience-network.png" width=500px style="opacity:0.2;filter:alpha(opacity=20);"> </div>
 
 ---
 
@@ -75,6 +75,7 @@ work for example, reproduction is not quite so simple."
 template: crotty1
 
 #### .red[If only it were so easy in computational/data science!]
+
 ---
 
 ## Outline
@@ -87,17 +88,6 @@ template: crotty1
  - .blue[Data:] archiving, curation, sharing
  - .blue[Code:] scripting, versioning, collaborating, sharing
  - .blue[Publication:] open access
-
----
-
-name: pillars1
-
-### The pillars of reproducible open science
-
-<image src="images/gorgolewski-poldrack-three-pillars.png" height=400px>
-
-  <a href="http://biorxiv.org/content/early/2016/02/12/039354.full.pdf+html">Gorgolewski and Poldrack (2016)</a>
-
 
 ---
 
@@ -147,6 +137,17 @@ http://www.phdcomics.com/comics/archive.php?comicid=1531
 
 ---
 
+name: pillars1
+
+### The pillars of reproducible open science
+
+<image src="images/gorgolewski-poldrack-three-pillars.png" height=400px>
+
+  <a href="http://biorxiv.org/content/early/2016/02/12/039354.full.pdf+html">Gorgolewski and Poldrack (2016)</a>
+
+
+---
+
 ## Public Reproducibility...
 
 Allowing others to reproduce your results.
@@ -164,7 +165,7 @@ Allowing others to reproduce your results.
 
 ---
 
-"an article about computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result."
+"An article about computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result."
 
 <a href="http://biostatistics.oxfordjournals.org/content/11/3/385.long">Buckheit and Donoho (1995) </a>
 
@@ -205,19 +206,15 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
 ## Data Repositories
 
- -  .blue[DesignSafe:] https://www.designsafe-ci.org/ <br>
-
- -  .blue[Community Surface Dynamics Modeling System]<br>
-    (CSDMS): http://csdms.colorado.edu Data and model repositories,<br>
-    Web interface to some models
-
  -  .blue[Open Science Framework:] https://osf.io/ <br>
-    Ex: April 12 talk by Kara Woo in
-    eScience Reproducibility and Open Science Seminar
+
+    [Slides by Kara Woo in eScience Reproducibility and Open Science Seminar](http://karawoo.com/escience-osf-seminar/osf_talk_20160412.html)
 
  - .blue[UW ResearchWorks:] https://researchworks.lib.washington.edu/ <br>
    Ex: Ocosta School tsunami study,
    https://digital.lib.washington.edu/researchworks/handle/1773/24054
+   Ex: Human neuroimaging data
+
 
  - .blue[figshare:] https://figshare.com/ <br>
    Ex: Search for tsunami
@@ -225,6 +222,24 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
  - .blue[Zenodo:] https://zenodo.org/ <br>
    Ex: Data and code for journal article on PTHA, <br>
    http://dx.doi.org/10.5281/zenodo.12406
+
+---
+
+## Domain-specific repositories
+
+### Geosciences:
+
+-  .blue[DesignSafe:] https://www.designsafe-ci.org/ <br>
+
+-  .blue[Community Surface Dynamics Modeling System]<br>
+   (CSDMS): http://csdms.colorado.edu Data and model repositories,<br>
+   Web interface to some models
+
+### Neuroscience:
+
+- .blue[Collaboration in Computational Neuroscience:] https://crcns.org/ <br>
+
+- .blue[Open fMRI:] https://openfmri.org/ <br>
 
 ---
 
@@ -244,3 +259,43 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
  -  [Software Carpentry](http://software-carpentry.org/)
 
  -  [Code Academy](https://www.codecademy.com/)
+
+---
+
+## Literate programming
+
+
+Binder (putting it together)
+
+
+---
+
+Virtualization and cloud computing
+
+Containers (Docker)
+
+---
+
+# Publish your software
+
+
+https://www.software.ac.uk/which-journals-should-i-publish-my-software
+
+
+---
+
+# Preprints
+
+https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/
+
+---
+
+## Summary and conclusions
+
+- Reproducibility is a cornerstone of science
+-
+---
+
+## Come to our office hours!
+
+http://escience.washington.edu/office-hours/
