@@ -148,6 +148,8 @@ name: pillars1
 
 ---
 
+name: public1
+
 ## Public Reproducibility...
 
 Allowing others to reproduce your results.
@@ -165,9 +167,65 @@ Allowing others to reproduce your results.
 
 ---
 
+template: public1
+
+<p>
+&nbsp;
+<p>
+
+.red[
 "An article about computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result."
+]
 
 <a href="http://biostatistics.oxfordjournals.org/content/11/3/385.long">Buckheit and Donoho (1995) </a>
+
+---
+
+name: topten1
+
+## .blue[Compare to Mathematics]
+
+Traditional research in Mathematics is reproducible...
+
+ - A paper containing a new theorem cannot be published without the proof.
+
+---
+
+template: topten1
+
+### .blue[It wasn't always so...]
+
+
+There is no . . . mathematician so expert in his science, as to place entire
+confidence in any truth immediately upon his discovery of it. . . . Every
+time he runs over his proofs, his confidence encreases; but still more by
+the approbation of his friends; and is raised to its utmost perfection by
+the universal assent and applauses of the learned world.
+
+ - [David Hume, 1739](http://www.gutenberg.org/files/4705/4705-h/4705-h.htm)
+
+---
+
+## .blue[Compare to Mathematics]
+
+Many arguments against publishing code might be applied to proofs in an
+alternate universe...
+
+["Top Ten Reasons To Not Share Your Code (and why you
+should anyway)", SIAM News, April, 2013](http://sinews2.siam.org/DetailsPage/tabid/607/ArticleID/386/Top-Ten-Reasons-To-Not-Share-Your-Code-and-why-you-should-anyway.aspx)
+
+
+ - The proof is too ugly to show anyone else. 
+
+ - I didn't work out all the details. 
+
+ - I didn't actually prove the theorem---my student did. 
+
+ - Giving the proof to my competitors would be unfair to me. 
+
+ - The proof is valuable intellectual property.
+
+ - Etc.
 
 ---
 
@@ -208,20 +266,24 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
  -  .blue[Open Science Framework:] https://osf.io/ <br>
 
-    [Slides by Kara Woo in eScience Reproducibility and Open Science Seminar](http://karawoo.com/escience-osf-seminar/osf_talk_20160412.html)
+    Slides by Kara Woo in 
+    [eScience Reproducibility and Open Science Seminar](http://karawoo.com/escience-osf-seminar/osf_talk_20160412.html)
 
  - .blue[UW ResearchWorks:] https://researchworks.lib.washington.edu/ <br>
-   Ex: Ocosta School tsunami study,
-   https://digital.lib.washington.edu/researchworks/handle/1773/24054
-   Ex: Human neuroimaging data
+
+   - Ex: Ocosta School tsunami study,
+     https://digital.lib.washington.edu/researchworks/handle/1773/24054
+
+   - Ex: Human neuroimaging data
 
 
  - .blue[figshare:] https://figshare.com/ <br>
-   Ex: Search for tsunami
 
  - .blue[Zenodo:] https://zenodo.org/ <br>
-   Ex: Data and code for journal article on PTHA, <br>
-   http://dx.doi.org/10.5281/zenodo.12406
+     - Ex: Clawpack software at http://dx.doi.org/10.5281/zenodo.50982
+
+     - Ex: Code, data, and Jupyter notebooks for a paper:
+       http://faculty.washington.edu/rjl/pubs/KLslip/index.html
 
 ---
 
@@ -240,6 +302,27 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 - .blue[Collaboration in Computational Neuroscience:] https://crcns.org/ <br>
 
 - .blue[Open fMRI:] https://openfmri.org/ <br>
+
+---
+
+## Tools to facilitate reproducibility
+
+### .blue[Virtualization]
+
+ - Package code along with complete environment
+
+ - E.g., VirtualBox, VMware, etc.
+
+ - Docker
+
+### .blue[Cloud computing]
+
+ - E.g., Amazon EC2, Windows Azure, etc. + VM
+
+### .blue[Web platforms for running code]
+
+ - E.g., RunMyCode.org, wakari.io
+ - SageMathCloud: https://cloud.sagemath.com
 
 ---
 
@@ -296,6 +379,20 @@ https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint
 -
 ---
 
-## Come to our office hours!
+
+<img src="images/escience.png" width=150>
+
+<image src="images/DSE-and-sponsors.png" height=200px>
+
+
+### Reproducibility and Open Science Working Group:
+
+ - https://reproduciblescience.org/
+
+ - Mailing list: reproducible@uw.edu,
+   https://mailman11.u.washington.edu/mailman/listinfo/reproducible
+
+### Come to our office hours!
+
 
 http://escience.washington.edu/office-hours/
