@@ -122,21 +122,6 @@ permanent record that can be checked.
 
 ---
 
-### Version control does *not* mean...
-
-<img src="images/PhDcomics-final.png" width=350>
-
-http://www.phdcomics.com/comics/archive.php?comicid=1531
-
----
-
-## <a href="https://git-scm.com/">Git</a>
-
-
-<img src="images/git.png" width=350>
-
----
-
 name: pillars1
 
 ### The pillars of reproducible open science
@@ -215,21 +200,61 @@ alternate universe...
 should anyway)", SIAM News, April, 2013](http://sinews2.siam.org/DetailsPage/tabid/607/ArticleID/386/Top-Ten-Reasons-To-Not-Share-Your-Code-and-why-you-should-anyway.aspx)
 
 
- - The proof is too ugly to show anyone else. 
+ - The proof is too ugly to show anyone else.
 
- - I didn't work out all the details. 
+ - I didn't work out all the details.
 
- - I didn't actually prove the theorem---my student did. 
+ - I didn't actually prove the theorem---my student did.
 
- - Giving the proof to my competitors would be unfair to me. 
+ - Giving the proof to my competitors would be unfair to me.
 
  - The proof is valuable intellectual property.
 
  - Etc.
 
+
 ---
 
-## Data Curation
+### .blue[Making your software available]
+
+The broader larger source software community has worked out a lot of the issues
+around making code available and broadly useful.
+
+- Version control
+
+---
+
+ ### Version control does *not* mean...
+
+ <img src="images/PhDcomics-final.png" width=350>
+
+ http://www.phdcomics.com/comics/archive.php?comicid=1531
+
+---
+
+ ## <a href="https://git-scm.com/">Git</a>
+
+
+ <img src="images/git.png" width=350>
+
+---
+
+- Version control
+- Automated software testing
+- Release with semantic versioning
+
+---
+
+### Semantic versioning
+
+http://semver.org/
+
+
+---
+
+## .blue[Making your data available]
+
+### Data Curation
 
 ### [Ten Simple Rules for the Care and Feeding of Scientific Data](http://dx.doi.org/10.1371/journal.pcbi.1003542)
 
@@ -266,7 +291,7 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
  -  .blue[Open Science Framework:] https://osf.io/ <br>
 
-    Slides by Kara Woo in 
+    Slides by Kara Woo in
     [eScience Reproducibility and Open Science Seminar](http://karawoo.com/escience-osf-seminar/osf_talk_20160412.html)
 
  - .blue[UW ResearchWorks:] https://researchworks.lib.washington.edu/ <br>
@@ -347,23 +372,56 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
 ## Literate programming
 
+- [Jupyter](http://jupyter.org/)
 
-Binder (putting it together)
+A notebook format that supports reproducibility by interweaving code, data and
+figures.
 
+40 different languages are supported, including Julia, Python and R, and many
+others ([Matlab](https://github.com/Calysto/matlab_kernel) too!).
+
+--
+
+#### Problem
+
+--
+
+To run these notebooks, you have to install all my dependencies.
+
+--
+
+To reproduce my results, you have to download my code, and my data, to your
+machine.
+
+--
+
+If my code has compiled components, you'll need to compile it.
+
+--
+
+If you happen to have a different operating system, different compiler,
+different libraries, etc... we might be out of luck!
 
 ---
 
-Virtualization and cloud computing
+### Binder
 
-Containers (Docker)
+http://mybinder.org
+
+Developed by the <a href="https://www.janelia.org/lab/freeman-lab">Jeremy Freeman's Lab</a> at Janelia Farms
+
+--
+
+For example, [here](http://mybinder.org/repo/cranmer/ligo-binder) is a binder
+that will run the LIGO analysis that confirmed the existence of gravitational
+waves (The Github repository is [here](https://github.com/cranmer/ligo-binder)).
 
 ---
 
-# Publish your software
 
+# Publishing your software as a paper
 
 https://www.software.ac.uk/which-journals-should-i-publish-my-software
-
 
 ---
 
