@@ -86,7 +86,7 @@ template: crotty1
      - Tools for reproducibility
 
  - .blue[Data:] archiving, curation, sharing
- - .blue[Code:] scripting, versioning, collaborating, sharing
+ - .blue[Code:] scripting, versioning, collaborating, sharing, publishing
  - .blue[Publication:] open access
 
 ---
@@ -119,17 +119,6 @@ Even if code and data are not shared, there should be a
 permanent record that can be checked.
 
 .blue[Analogous to lab notebooks.]
-
----
-
-name: pillars1
-
-### The pillars of reproducible open science
-
-<image src="images/gorgolewski-poldrack-three-pillars.png" height=400px>
-
-  <a href="http://biorxiv.org/content/early/2016/02/12/039354.full.pdf+html">Gorgolewski and Poldrack (2016)</a>
-
 
 ---
 
@@ -204,7 +193,7 @@ should anyway)", SIAM News, April, 2013](http://sinews2.siam.org/DetailsPage/tab
 
  - I didn't work out all the details.
 
- - I didn't actually prove the theorem---my student did.
+ - I didn't actually prove the theorem - my student did.
 
  - Giving the proof to my competitors would be unfair to me.
 
@@ -215,10 +204,22 @@ should anyway)", SIAM News, April, 2013](http://sinews2.siam.org/DetailsPage/tab
 
 ---
 
+name: pillars1
+
+### The pillars of reproducible and open science
+
+<image src="images/gorgolewski-poldrack-three-pillars.png" height=400px>
+
+ <a href="http://biorxiv.org/content/early/2016/02/12/039354.full.pdf+html">Gorgolewski and Poldrack (2016)</a>
+
+---
+
 ### .blue[Making your software available]
 
-The broader larger source software community has worked out a lot of the issues
+The broader open source software community has worked out a lot of the issues
 around making code available and broadly useful.
+
+--
 
 - Version control
 
@@ -239,15 +240,136 @@ around making code available and broadly useful.
 
 ---
 
+
+### .blue[Making your software available]
+
+The broader open source software community has worked out a lot of the issues
+around making code available and broadly useful.
+
+
+- Version control
+--
+- Automated software testing
+
+---
+
+### Software testing
+
+--
+
+Write code that checks that our code does what we expect it to do
+
+--
+
+We all do this anyway...
+
+--
+
+Formalize this and keep running the tests every time you make changes to the
+software
+
+--
+
+[Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)
+
+---
+
+### .blue[Making your software available]
+
+The broader open source software community has worked out a lot of the issues
+around making code available and broadly useful.
+
+
 - Version control
 - Automated software testing
+
+--
+
+- Software licensing
+
+---
+
+### Things to consider when licensing your code
+
+http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/
+
+--
+
+- Code without a license is *closed code*
+
+--
+
+- Use a license that is broadly compatible (*do not make up your own license!*)
+
+--
+
+- Consider using a permissive (e.g, BSD) license, rather than a "copyleft" license
+
+---
+
+### .blue[Making your software available]
+
+The broader open source software community has worked out a lot of the issues
+around making code available and broadly useful.
+
+
+- Version control
+- Automated software testing
+- Software licensing
+
+--
+
 - Release with semantic versioning
 
 ---
 
+
 ### Semantic versioning
 
+Is a way to communicate about your softwares readiness for use by others
+
+--
+
+0.1 => "Here it is! Have fun, but don't expect me to support your particular use"
+
+--
+
+1.0 => "This is serious. I promise that some things will not change. Until version 2.0"
+
+--
+
 http://semver.org/
+
+---
+
+### Make your software citeable!
+
+"But we are academics, not open source software people! How do we get credit for all this work?"
+
+--
+
+Especially pertinent if some aspects of your software work are not captured by traditional peer-reviewed publications
+
+--
+
+Software papers give you a line in your CV, and allow others to cite their dependence on your software (independently from their inspiration by your findings).
+
+---
+
+# Software journals
+
+https://www.software.ac.uk/which-journals-should-i-publish-my-software
+
+--
+
+### [JOSS](http://joss.theoj.org/)
+
+
+--
+
+### How to cite software
+
+https://github.com/uwescience/citing_software
 
 
 ---
@@ -330,49 +452,18 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
 ---
 
-## Tools to facilitate reproducibility
+### Data availabilty confers a citation advantage
 
-### .blue[Virtualization]
+http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000308
 
- - Package code along with complete environment
+http://opcit.eprints.org/oacitation-biblio.html
 
- - E.g., VirtualBox, VMware, etc.
-
- - Docker
-
-### .blue[Cloud computing]
-
- - E.g., Amazon EC2, Windows Azure, etc. + VM
-
-### .blue[Web platforms for running code]
-
- - E.g., RunMyCode.org, wakari.io
- - SageMathCloud: https://cloud.sagemath.com
-
----
-
-## Some Git references
-
- -  [List of 10 recommended tutorials](http://sixrevisions.com/resources/git-tutorials-beginners/)
-
- -  https://help.github.com/categories/bootcamp/
-
- -  http://git-scm.com/book/en/Getting-Started-Git-Basics
-
- -  [Github online tutorial](http://try.github.com/)
-
-
-### More general resources, including Git:
-
- -  [Software Carpentry](http://software-carpentry.org/)
-
- -  [Code Academy](https://www.codecademy.com/)
 
 ---
 
 ## Literate programming
 
-- [Jupyter](http://jupyter.org/)
+### [Jupyter](http://jupyter.org/)
 
 A notebook format that supports reproducibility by interweaving code, data and
 figures.
@@ -418,16 +509,22 @@ waves (The Github repository is [here](https://github.com/cranmer/ligo-binder)).
 
 ---
 
+## Making your publications available
 
-# Publishing your software as a paper
-
-https://www.software.ac.uk/which-journals-should-i-publish-my-software
+Publish in open access venues
 
 ---
 
 # Preprints
 
 https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/
+
+---
+
+
+---
+
+### Publishing code and data together with your papers
 
 ---
 
@@ -452,5 +549,52 @@ https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint
 
 ### Come to our office hours!
 
-
 http://escience.washington.edu/office-hours/
+
+---
+
+### Feedback on this talk?
+
+Post issues here: https://github.com/rjleveque/2016-ros-amath/issues
+
+---
+
+## Tools to facilitate reproducibility
+
+### .blue[Virtualization]
+
+ - Package code along with complete environment
+
+ - E.g., VirtualBox, VMware, etc.
+
+ - Docker
+
+### .blue[Cloud computing]
+
+ - E.g., Amazon EC2, Windows Azure, etc. + VM
+
+### .blue[Web platforms for running code]
+
+ - E.g., RunMyCode.org, wakari.io
+ - SageMathCloud: https://cloud.sagemath.com
+
+---
+
+## Some Git references
+
+ -  [List of 10 recommended tutorials](http://sixrevisions.com/resources/git-tutorials-beginners/)
+
+ -  https://help.github.com/categories/bootcamp/
+
+ -  http://git-scm.com/book/en/Getting-Started-Git-Basics
+
+ -  [Github online tutorial](http://try.github.com/)
+
+
+### More general resources, including Git:
+
+ -  [Software Carpentry](http://software-carpentry.org/)
+
+ -  [Code Academy](https://www.codecademy.com/)
+
+---
