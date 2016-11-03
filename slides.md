@@ -248,7 +248,9 @@ around making code available and broadly useful.
 
 
 - Version control
+
 --
+
 - Automated software testing
 
 ---
@@ -281,6 +283,7 @@ around making code available and broadly useful.
 
 
 - Version control
+
 - Automated software testing
 
 --
@@ -305,6 +308,10 @@ http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scient
 
 - Consider using a permissive (e.g, BSD) license, rather than a "copyleft" license
 
+--
+
+### Licensing makes your software useful to others, while maintaining your rights as the creator of the software.
+
 ---
 
 ### .blue[Making your software available]
@@ -314,7 +321,9 @@ around making code available and broadly useful.
 
 
 - Version control
+
 - Automated software testing
+
 - Software licensing
 
 --
@@ -334,17 +343,29 @@ Is a way to communicate about your softwares readiness for use by others
 
 --
 
-1.0 => "This is serious. I promise that some things will not change. Until version 2.0"
+0.1.1 => "I fixed a few bugs, but the API remains unchanged"
 
 --
 
-http://semver.org/
+1.0 => "This is serious, and I intend to keep these APIs around for a while"
+
+--
+
+1.1 => "A few additional features, but API is preserved"
+
+--
+
+2.0 => "We might have broken some of our APIs since 1.1"
+
+--
+
+### http://semver.org/
 
 ---
 
 ### Make your software citeable!
 
-"But we are academics, not open source software people! How do we get credit for all this work?"
+To proceed in the academic career ladder, we need signals that our work is meaningful and useful
 
 --
 
@@ -352,7 +373,7 @@ Especially pertinent if some aspects of your software work are not captured by t
 
 --
 
-Software papers give you a line in your CV, and allow others to cite their dependence on your software (independently from their inspiration by your findings).
+.red[**Software papers**] give you a line in your CV, and allow others to cite their dependence on your software (independently from their inspiration by your findings).
 
 ---
 
@@ -362,7 +383,7 @@ https://www.software.ac.uk/which-journals-should-i-publish-my-software
 
 --
 
-### [JOSS](http://joss.theoj.org/)
+### [Journal of Open Source Software](http://joss.theoj.org/)
 
 
 --
@@ -421,7 +442,8 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
    - Ex: Ocosta School tsunami study,
      https://digital.lib.washington.edu/researchworks/handle/1773/24054
 
-   - Ex: Human neuroimaging data
+   - Ex: Human neuroimaging data,
+     https://digital.lib.washington.edu/researchworks/handle/1773/33311
 
 
  - .blue[figshare:] https://figshare.com/ <br>
@@ -452,12 +474,32 @@ http://dx.doi.org/10.1371/journal.pcbi.1003542
 
 ---
 
-### Data availabilty confers a citation advantage
+## Data availabilty confers a citation advantage
 
-http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000308
+### [Sharing Detailed Research Data Is Associated with Increased Citation Rate](http://dx.doi.org/10.1371/journal.pone.0000308)
 
-http://opcit.eprints.org/oacitation-biblio.html
 
+Piwowar HA, Day RS, Fridsma DB (2007) PLoS ONE 2(3): e308. http://dx.doi.org/10.1371/journal.pone.0000308
+
+--
+
+A collection of links on the topic: http://opcit.eprints.org/oacitation-biblio.html
+
+---
+
+### Baking in reproducibility from the start
+
+--
+
+- Organize your data in a manner that will make sharing easy.
+
+--
+
+- Develop your software using git/Github. Use private repos during development, if you must (https://education.github.com/)
+
+--
+
+- Use tools that facilitate open communication around code, data and results.
 
 ---
 
@@ -471,9 +513,24 @@ figures.
 40 different languages are supported, including Julia, Python and R, and many
 others ([Matlab](https://github.com/Calysto/matlab_kernel) too!).
 
+---
+
+## Example
+
+Evaluating the Accuracy of Diffusion MRI Models in White Matter
+
+
+http://dx.doi.org/10.1371/journal.pone.0123272
+
 --
 
-#### Problem
+Code: https://github.com/vistalab/osmosis
+Notebooks: https://github.com/vistalab/osmosis/tree/master/doc/paper_figures
+Data: https://purl.stanford.edu/ng782rw8378
+
+---
+
+## Dependency hell
 
 --
 
@@ -495,11 +552,40 @@ different libraries, etc... we might be out of luck!
 
 ---
 
+## Tools to mitigate dependency hell
+
+--
+
+### .blue[Virtualization]
+
+ - Package code along with complete environment
+
+ - E.g., VirtualBox, VMware, etc.
+
+ - Docker
+
+--
+
+### .blue[Cloud computing]
+
+ - E.g., Amazon EC2, Windows Azure, etc. + VM
+
+--
+
+### .blue[Web platforms for running code]
+
+ - E.g., RunMyCode.org, wakari.io
+ - SageMathCloud: https://cloud.sagemath.com
+
+---
+
 ### Binder
 
 http://mybinder.org
 
 Developed by the <a href="https://www.janelia.org/lab/freeman-lab">Jeremy Freeman's Lab</a> at Janelia Farms
+
+Provisions a GitHub repository as a cloud-computing environment
 
 --
 
@@ -511,27 +597,51 @@ waves (The Github repository is [here](https://github.com/cranmer/ligo-binder)).
 
 ## Making your publications available
 
-Publish in open access venues
+### .red[Publish in open access journals]
+
+--
+
+### .red[Use preprint servers]:
+
+Make your work available *before it is published*
+
+https://arxiv.org/
+http://biorxiv.org/
+
+--
+
+Provides access to your work
+
+--
+
+Establishes precedence
 
 ---
 
-# Preprints
+## When should I preprint?
 
 https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/
 
----
-
-
----
-
-### Publishing code and data together with your papers
+<img src="images/preprint-benefits-afo-posting-time.png" width=350>
 
 ---
 
 ## Summary and conclusions
 
-- Reproducibility is a cornerstone of science
--
+- Reproducibility is a cornerstone of science.
+
+--
+
+- Think about reproducibility when you start your project and bake it in.
+
+--
+
+- Make your data, code and papers open and available, so that others can build on your work.
+
+--
+
+- Come and talk to us!
+
 ---
 
 
@@ -555,28 +665,20 @@ http://escience.washington.edu/office-hours/
 
 ### Feedback on this talk?
 
-Post issues here: https://github.com/rjleveque/2016-ros-amath/issues
+We're eager to hear! And you can post issues/questions here: https://github.com/rjleveque/2016-ros-amath/issues
 
 ---
 
-## Tools to facilitate reproducibility
 
-### .blue[Virtualization]
+class: center, middle
 
- - Package code along with complete environment
+# More materials
 
- - E.g., VirtualBox, VMware, etc.
+---
 
- - Docker
+Lorena Barba's top ten readings on reproducibility:
 
-### .blue[Cloud computing]
-
- - E.g., Amazon EC2, Windows Azure, etc. + VM
-
-### .blue[Web platforms for running code]
-
- - E.g., RunMyCode.org, wakari.io
- - SageMathCloud: https://cloud.sagemath.com
+https://medium.com/@lorenaabarba/barba-group-reproducibility-syllabus-e3757ee635cf#.x1w245xvg
 
 ---
 
