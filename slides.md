@@ -339,11 +339,7 @@ Is a way to communicate about your softwares readiness for use by others
 
 --
 
-0.1 => "Here it is! Have fun, but don't expect me to support your particular use"
-
---
-
-0.1.1 => "I fixed a few bugs, but the API remains unchanged"
+0.1 => "Here it is! Have fun, but don't expect me to support your particular use, or to keep this API"
 
 --
 
