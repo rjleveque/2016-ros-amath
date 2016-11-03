@@ -339,11 +339,7 @@ Is a way to communicate about your softwares readiness for use by others
 
 --
 
-0.1 => "Here it is! Have fun, but don't expect me to support your particular use"
-
---
-
-0.1.1 => "I fixed a few bugs, but the API remains unchanged"
+0.1 => "Here it is! Have fun, but don't expect me to support your particular use, or to keep this API"
 
 --
 
@@ -524,9 +520,11 @@ http://dx.doi.org/10.1371/journal.pone.0123272
 
 --
 
-Code: https://github.com/vistalab/osmosis
-Notebooks: https://github.com/vistalab/osmosis/tree/master/doc/paper_figures
-Data: https://purl.stanford.edu/ng782rw8378
+### Code: https://github.com/vistalab/osmosis
+
+### Notebooks: https://github.com/vistalab/osmosis/tree/master/doc/paper_figures
+
+### Data: https://purl.stanford.edu/ng782rw8378
 
 ---
 
@@ -579,7 +577,7 @@ different libraries, etc... we might be out of luck!
 
 ---
 
-### Binder
+# Binder
 
 http://mybinder.org
 
@@ -645,9 +643,7 @@ https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint
 ---
 
 
-<img src="images/escience.png" width=150>
-
-<image src="images/DSE-and-sponsors.png" height=200px>
+<img src="images/escience.png" width=400>
 
 
 ### Reproducibility and Open Science Working Group:
